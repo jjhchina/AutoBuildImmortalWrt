@@ -41,7 +41,11 @@ PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
-
+PACKAGES="$PACKAGES luci-app-diskman
+PACKAGES="$PACKAGES luci-app-filetransfer
+PACKAGES="$PACKAGES luci-app-nlbwmon
+PACKAGES="$PACKAGES luci-app-adguardhome 
+PACKAGES="$PACKAGES luci-app-udpxy
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
